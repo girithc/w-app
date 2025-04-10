@@ -42,7 +42,8 @@ export default function ApplicationPage() {
   const emailRef = useRef<HTMLInputElement>(null);
   const [files, setFiles] = useState<Partial<Application["files"]>>({});
 
-  const handleFileChange = (field: keyof Application["files"]) => (e: any) => {
+  const handleFileChange = (field: keyof Application["files"]) => (e: React.ChangeEvent<HTMLInputElement>) => {
+
     const file = e.target.files?.[0];
     if (file) {
       setFiles((prev) => ({ ...prev, [field]: file }));
