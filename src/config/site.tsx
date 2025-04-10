@@ -21,6 +21,16 @@ export const navigations: Navigation[] = [
   {
     icon: MessagesSquare,
     name: "Ticket",
-    href: "/ticket",
+    href: "/applications",
+  },
+  {
+    icon: MessagesSquare,
+    name: "Rate Sheet",
+    href: "/rate-sheet",
+  },
+  {
+    icon: MessagesSquare,
+    name: "Profile",
+    href: "/profile",
   },
 ];
